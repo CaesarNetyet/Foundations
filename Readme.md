@@ -1,0 +1,1 @@
+These are the excercises I've done learning javaScript.
