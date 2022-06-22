@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keydown</title>
+</head>
+<body>
+    <h1>Press a key</h1>
+    <input type="text" id="box">
+    <div class="output"></div>
+
+    <script>
+        const box = document.querySelector("#box");
+        const output = document.querySelector(".output");
+        //Console log your pressed key
+        box.addEventListener('keydown', event => console.log(event.key));
+        //Display your pressed key
+        box.addEventListener('keydown', event => output.textContent = `you have pressed ${event.key}`);
+    </script>
+</body>
+</html>
